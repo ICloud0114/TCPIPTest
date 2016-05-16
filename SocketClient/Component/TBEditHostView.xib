@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TBEditHostView" customModule="SocketClient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ur3-Ue-AIE">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDb-vG-Mq2">
+                    <rect key="frame" x="36" y="139" width="303" height="290"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pop_bg_top" translatesAutoresizingMaskIntoConstraints="NO" id="Pto-nW-YdE">
+                            <rect key="frame" x="0.0" y="0.0" width="302" height="54"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pop_bg_mid" translatesAutoresizingMaskIntoConstraints="NO" id="xVC-ad-PwW">
+                            <rect key="frame" x="0.0" y="54.5" width="301.5" height="190"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzT-fT-8zz">
+                            <rect key="frame" x="0.0" y="245" width="151" height="44"/>
+                            <state key="normal" title="删除" backgroundImage="pop_button_left_default">
+                                <color key="titleColor" red="0.15294117647058825" green="0.68235294117647061" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="pop_button_left_pressed"/>
+                            <connections>
+                                <action selector="deleteAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="tAy-vW-zDq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74t-mQ-HIg">
+                            <rect key="frame" x="151.5" y="245" width="150.5" height="44"/>
+                            <state key="normal" title="确定" backgroundImage="pop_button_right_default">
+                                <color key="titleColor" red="0.15294117647058825" green="0.68235294117647061" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="pop_button_right_pressed"/>
+                            <connections>
+                                <action selector="submitAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="7CY-p8-5ax"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="909-ZJ-1KY">
+                            <rect key="frame" x="15" y="207" width="90" height="22"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <state key="normal" title="  自动换行" image="pop_button_select_default">
+                                <color key="titleColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="pop_button_select_selected"/>
+                            <state key="highlighted" image="pop_button_select_pressed"/>
+                            <connections>
+                                <action selector="autoWrapAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="WXS-D1-Skl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AU3-dy-wiD">
+                            <rect key="frame" x="106" y="207" width="90" height="22"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <state key="normal" title="  自动重连" image="pop_button_select_default">
+                                <color key="titleColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="pop_button_select_selected"/>
+                            <state key="highlighted" image="pop_button_select_pressed"/>
+                            <connections>
+                                <action selector="autoReconnectAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="hFu-Lj-t0c"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="添加链接" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JN-AF-UDp">
+                            <rect key="frame" x="117" y="16" width="68" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pop_txt_left" translatesAutoresizingMaskIntoConstraints="NO" id="hAP-A9-uEp">
+                            <rect key="frame" x="15" y="70" width="70" height="35"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="192.168.1.101" minimumFontSize="17" background="pop_txt_right_default" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="82k-oH-71c">
+                            <rect key="frame" x="85" y="70" width="202" height="35"/>
+                            <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                            <connections>
+                                <action selector="textFieldDidFinishedEdit:" destination="iN0-l3-epB" eventType="editingDidEndOnExit" id="Hyu-6L-X9O"/>
+                            </connections>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pop_txt_left" translatesAutoresizingMaskIntoConstraints="NO" id="dcK-s6-7mw">
+                            <rect key="frame" x="15" y="113" width="70" height="35"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8080" minimumFontSize="17" background="pop_txt_right_default" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zsb-dm-5eH">
+                            <rect key="frame" x="85" y="113" width="202" height="35"/>
+                            <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                            <connections>
+                                <action selector="textFieldDidFinishedEdit:" destination="iN0-l3-epB" eventType="editingDidEndOnExit" id="gbe-8C-ztm"/>
+                            </connections>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pop_txt_left" translatesAutoresizingMaskIntoConstraints="NO" id="GLG-gG-zQ8">
+                            <rect key="frame" x="15" y="156" width="70" height="35"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" minimumFontSize="17" background="pop_txt_right_default" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bvc-OY-sS4">
+                            <rect key="frame" x="85" y="156" width="202" height="35"/>
+                            <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                            <connections>
+                                <action selector="textFieldDidFinishedEdit:" destination="iN0-l3-epB" eventType="editingDidEndOnExit" id="zn5-PI-CVe"/>
+                            </connections>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5f-dz-pCX">
+                            <rect key="frame" x="42" y="77" width="16" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="端口" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufF-qJ-sLT">
+                            <rect key="frame" x="33" y="120" width="34" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="定时发送" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DH4-pV-Ji8">
+                            <rect key="frame" x="20" y="163" width="60" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzd-sC-bcq" userLabel="自动回复">
+                            <rect key="frame" x="197" y="207" width="90" height="22"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <state key="normal" title="  自动回复" image="pop_button_select_default">
+                                <color key="titleColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="pop_button_select_selected"/>
+                            <state key="highlighted" image="pop_button_select_pressed"/>
+                            <connections>
+                                <action selector="autoReplyAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="FEo-dC-vdH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="303" id="2eC-KZ-WmN"/>
+                        <constraint firstAttribute="height" constant="290" id="sak-Xs-cai"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ur3-Ue-AIE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5av-0E-tcN"/>
+                <constraint firstAttribute="centerX" secondItem="NDb-vG-Mq2" secondAttribute="centerX" id="BJV-U9-Zbf"/>
+                <constraint firstAttribute="centerY" secondItem="NDb-vG-Mq2" secondAttribute="centerY" constant="49.5" id="TZi-7h-sZg"/>
+                <constraint firstAttribute="trailing" secondItem="ur3-Ue-AIE" secondAttribute="trailing" id="dBz-iW-fgd"/>
+                <constraint firstAttribute="bottom" secondItem="ur3-Ue-AIE" secondAttribute="bottom" id="rAC-qE-eo3"/>
+                <constraint firstItem="ur3-Ue-AIE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yei-34-MOO"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="alertView" destination="NDb-vG-Mq2" id="XwP-dL-1Gp"/>
+                <outlet property="bgView" destination="ur3-Ue-AIE" id="9vE-6h-rKg"/>
+                <outlet property="ipTextField" destination="82k-oH-71c" id="YH5-hs-kYI"/>
+                <outlet property="leftButton" destination="TzT-fT-8zz" id="rT9-j4-h8G"/>
+                <outlet property="portTextField" destination="zsb-dm-5eH" id="h2D-PL-tob"/>
+                <outlet property="reconnectButton" destination="AU3-dy-wiD" id="lv2-VY-aWz"/>
+                <outlet property="replyButton" destination="hzd-sC-bcq" id="Pag-ix-tex"/>
+                <outlet property="rightButton" destination="74t-mQ-HIg" id="PBn-FJ-LfA"/>
+                <outlet property="timeTextField" destination="bvc-OY-sS4" id="ILh-CV-did"/>
+                <outlet property="titleLabel" destination="0JN-AF-UDp" id="RZx-GE-VF9"/>
+                <outlet property="wrapButton" destination="909-ZJ-1KY" id="f1V-wb-2CD"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="pop_bg_mid" width="302" height="190"/>
+        <image name="pop_bg_top" width="302" height="54"/>
+        <image name="pop_button_left_default" width="151" height="44"/>
+        <image name="pop_button_left_pressed" width="151" height="44"/>
+        <image name="pop_button_right_default" width="150" height="44"/>
+        <image name="pop_button_right_pressed" width="150" height="44"/>
+        <image name="pop_button_select_default" width="18" height="18"/>
+        <image name="pop_button_select_pressed" width="18" height="18"/>
+        <image name="pop_button_select_selected" width="18" height="18"/>
+        <image name="pop_txt_left" width="70" height="35"/>
+        <image name="pop_txt_right_default" width="202" height="35"/>
+    </resources>
+</document>
